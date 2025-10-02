@@ -1,6 +1,8 @@
 import { PrismaClient } from '../generated/prisma/index.js'
 import type { Book } from '../generated/prisma/index.js';
-export class PrismaBookRepository {
+import type { bookRepositoryInterface } from './bookRepositoryInterface.js';
+
+export class PrismaBookRepository implements bookRepositoryInterface {
     private prisma: PrismaClient;
 
     constructor() {
@@ -11,7 +13,7 @@ export class PrismaBookRepository {
         return await this.prisma.book.create({
             data: {
                 title,
-                isAvailable: true,
+                isAvailable: true,  
             }
         });
     }
