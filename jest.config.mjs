@@ -5,5 +5,8 @@ export default {
   transform: {
     "^.+\\.ts$": ["ts-jest", { useESM: true }]
   },
-  testMatch: ["**/tests/**/*.test.ts"]
+  testMatch: ["**/*.test.ts"],
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  }
 };
