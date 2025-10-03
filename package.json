@@ -4,8 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm --watch src/app.ts",
-    "dev:old": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "dev": "node --loader ts-node/esm --watch src/infrastructure/web/app.ts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
@@ -14,7 +13,8 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.16.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
