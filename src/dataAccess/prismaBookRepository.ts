@@ -1,6 +1,6 @@
 import { PrismaClient } from '../generated/prisma/index.js'
 import type { Book } from '../generated/prisma/index.js';
-import type { bookRepositoryInterface } from './bookRepositoryInterface.js';
+import type { bookRepositoryInterface } from '../domain/repository/bookRepositoryInterface.js';
 
 export class PrismaBookRepository implements bookRepositoryInterface {
     private prisma: PrismaClient;

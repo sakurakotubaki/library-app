@@ -1,7 +1,7 @@
 import express from 'express';
 import { BookController } from './presentation/bookController.js';
 import { BookService } from './businessLogic/bookService.js';
-import { PrismaBookRepository } from './dataAccess/prismaBookRepository.js';
+import { PrismaBookRepository } from './domain/repository/prismaBookRepository.js';
 
 const app = express();
 

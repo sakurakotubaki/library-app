@@ -1,5 +1,5 @@
 import { jest, describe, it, expect, beforeEach, afterEach } from '@jest/globals';
-import type { bookRepositoryInterface } from "../dataAccess/bookRepositoryInterface.js";
+import type { bookRepositoryInterface } from "../domain/repository/bookRepositoryInterface.js";
 import { BookService } from "./bookService.js";
 
 const mockBookRepository: jest.Mocked<bookRepositoryInterface> = {
